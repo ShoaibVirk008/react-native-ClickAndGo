@@ -27,7 +27,7 @@ class Login extends Component {
                         </View> */}
                         <LinearGradient
                             colors={Colors.appGradiantColors}
-                            style={[AppStyles.compContainer, { borderRadius: 10, elevation: 10, borderBottomRightRadius: 50 }]}
+                            style={[AppStyles.compContainer, { borderRadius: 10, elevation: 10, borderBottomRightRadius: 50,borderTopLeftRadius: 50 }]}
                         >
                             <View style={[AppStyles.compContainer, {}]}>
                                 <Text style={[AppStyles.h6, { color: Colors.appTextColor6, textAlign: 'center' }]}>Login To Your Account</Text>

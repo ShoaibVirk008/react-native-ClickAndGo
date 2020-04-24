@@ -1,4 +1,5 @@
 import Logo from './Logo'
+import LogoText from './LogoText'
 import InputWithIcon from './InputWithIcon'
 import ButtonWithGradiantColor from './ButtonWithGradiantColor'
 import OrComponent from './OrComponent'
@@ -13,8 +14,10 @@ import ButtonWithIconText from './ButtonWithIconText'
 
 
 
+
 export {
     Logo,
+    LogoText,
     InputWithIcon,
     ButtonWithGradiantColor,
     OrComponent,
@@ -23,5 +26,6 @@ export {
     GradiantBackground,
     ButtonWithIconTextArrow,
     ButtonRoundWithGradiantColor,
-    ButtonWithIconText
+    ButtonWithIconText,
+
 }

@@ -10,6 +10,7 @@ import { Icon } from 'react-native-elements';
 import { AppStyles, Colors } from '../Themes';
 import { totalSize, width } from 'react-native-dimension';
 import { GradiantBackground } from '../Components';
+import { Onboarding } from '../Containers/Onboarding';
 
 const AuthStack = createStackNavigator({
     login: Login,
@@ -125,6 +126,7 @@ const AppStack = createStackNavigator({
 
 const StackSwitcher = createSwitchNavigator({
     Splash: AuthLoading,
+    Onboarding: Onboarding,
     Auth: AuthStack,
     App: AppStack
 },

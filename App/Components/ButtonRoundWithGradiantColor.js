@@ -26,7 +26,6 @@ class ButtonRoundWithGradiantColor extends Component {
                         size={iconSize ? iconSize : totalSize(5)}
                         color={Colors.appTextColor6}
                     />
-                    <Text style={[AppStyles.textRegular, { fontSize: totalSize(1.75), color: Colors.appTextColor6 }]}>{text}</Text>
                 </LinearGradient>
             </TouchableOpacity>
         );

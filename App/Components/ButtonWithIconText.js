@@ -18,14 +18,14 @@ class ButtonWithIconText extends Component {
                 onPress={onPress}
                 style={[{ backgroundColor: Colors.appBgColor1, borderRadius: 10, elevation: 10, height: height(17.5), width: width(32.5), alignItems: 'center', justifyContent: 'center' }, buttonStyle]}
             >
-                <View style={{ alignItems: 'center' }}>
+                <View style={{ alignItems: 'center', marginHorizontal: width(2.5) }}>
                     <Icon
                         name={iconName ? iconName : "email"}
                         type={iconType ? iconType : "material-community"}
                         size={iconSize ? iconSize : totalSize(7)}
                         color={Colors.appColor1}
                     />
-                    <Text style={[AppStyles.textRegular, { fontSize: totalSize(1.5), color: Colors.appColor1 }]}>{text}</Text>
+                    <Text style={[AppStyles.textMedium, { color: Colors.appColor1, textAlign: 'center' }]}>{text}</Text>
                 </View>
             </TouchableOpacity>
         );

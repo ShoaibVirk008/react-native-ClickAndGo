@@ -27,7 +27,7 @@ class Signup extends Component {
 
                         <LinearGradient
                             colors={Colors.appGradiantColors}
-                            style={[AppStyles.compContainer, { borderRadius: 10, elevation: 10, borderBottomRightRadius: 50, paddingBottom: height(5) }]}
+                            style={[AppStyles.compContainer, { borderRadius: 10, elevation: 10, borderBottomRightRadius: 50, paddingBottom: height(5),borderTopLeftRadius: 50  }]}
                         >
                             <View style={[AppStyles.compContainer, { marginBottom: 0 }]}>
                                 <Text style={[AppStyles.h6, { color: Colors.appTextColor6, textAlign: 'center', }]}>Sign Up To Create a Free Account</Text>

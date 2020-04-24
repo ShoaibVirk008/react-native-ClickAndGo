@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { AppStyles, Colors, } from '../../../Themes';
-import { ButtonWithGradiantColor, ButtonRoundWithGradiantColor, ButtonWithIconText } from '../../../Components';
+import { AppStyles, Colors, FontFamily, } from '../../../Themes';
+import { ButtonWithGradiantColor, ButtonRoundWithGradiantColor, ButtonWithIconText, LogoText } from '../../../Components';
 import { height, width, totalSize } from 'react-native-dimension';
 import Modal from 'react-native-modal'
 import { Icon } from 'react-native-elements';
@@ -37,7 +37,7 @@ class Home extends Component {
                 <View style={styles.modalRootContainer}>
                     <ScrollView>
                         <View style={[AppStyles.compContainer, { justifyContent: 'center' }]}>
-                            <Text style={[AppStyles.h4, { textAlign: 'center', color: Colors.appColor1 }]}>{title}</Text>
+                            <Text style={[AppStyles.h5, { textAlign: 'center', color: Colors.appColor1, fontFamily: FontFamily.appTextBold }]}>{title}</Text>
                             <View style={{ position: 'absolute', right: 0 }}>
                                 <Icon onPress={toggleModal} name="close" type="font-awesome" size={totalSize(3)} color={Colors.appTextColor5} />
                             </View>
@@ -58,7 +58,7 @@ class Home extends Component {
         return (
             <View style={[AppStyles.mainContainer, { justifyContent: 'space-evenly' }]}>
                 <View style={[AppStyles.compContainer, { marginVertical: 0 }]}>
-                    <Text style={[AppStyles.h5, styles.topText]}>CLICK AND GO</Text>
+                    <LogoText />
                     <Text style={[AppStyles.textMedium, styles.topText, { color: Colors.appTextColor5 }]}>never forget anything</Text>
                 </View>
                 <ButtonWithGradiantColor
